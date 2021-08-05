@@ -1,0 +1,24 @@
+1. client --> 
+		  <-- Server
+   요청하면 응답
+		  
+		  
+2. Forward (위임) : pageContext.forward("mvclist.jsp");
+   = 값 전달이 필요할 때 사용
+
+   client가 mvccontroller.jsp로 요청 --> mvcselect.jsp로 위엄 (요청을 받고 응답함)
+   client --> Server --> View(대신 응답)
+   		  <----------------		
+   		  
+   		  
+3. sendRedirect : response.sendRedirect("mvcinsert.jsp");
+   - 화면 전환
+   
+   client가 mvccontroller.jsp로 요청 --> 서버에서 응답하다가 서버로 다시 요청 후 응답. (두 요청은 다름)
+
+   client ---> server ----> server
+   		  <-------------------
+   		  
+   		  
+   		  
+   		  
